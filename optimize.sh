@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Ensure the script is being run on Ubuntu
+if ! [[ $(lsb_release -a 2>/dev/null | grep 'Ubuntu') ]]; then
+    echo "This script is only supported on Ubuntu."
+    exit 1
+fi
+
+echo "Running on Ubuntu. Proceeding with optimizations..."
+
+#!/bin/bash
+
 # VPSOptimizer - 一键优化你的 VPS 网络设置
 # 作者: Wen Sun | GitHub: https://github.com/sorrow1119/VPSOptimizer
 
