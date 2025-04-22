@@ -29,3 +29,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/你的用户名/VPSOptimizer/m
    ```bash
    git clone https://github.com/sorrow1119/VPSOptimizer.git
    cd VPSOptimizer
+2.Make the script executable:使脚本可执行：
+   ```bash
+   chmod +x optimize.sh
+3.Run the script:运行脚本：
+  ```bash
+  sudo ./optimize.sh
+ 
