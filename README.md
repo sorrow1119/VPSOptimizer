@@ -12,3 +12,6 @@
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/你的用户名/VPSOptimizer/main/optimize.sh)
+## 致谢
+
+本项目由 [VTEXS] 提供免费 VPS 赞助支持，感谢他们对开源社区的支持。
