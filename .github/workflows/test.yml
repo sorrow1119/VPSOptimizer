@@ -1,0 +1,23 @@
+name: Run VPSOptimizer script
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Make script executable
+      run: chmod +x optimize.sh
+
+    - name: Run optimize.sh
+      run: sudo ./optimize.sh
